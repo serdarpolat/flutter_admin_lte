@@ -1,5 +1,5 @@
 import 'package:admin_lte/core/core.dart';
-import 'package:admin_lte/views/sidebar/sidebar_widgets/sidebar_layouts.dart';
+import 'package:admin_lte/views/components/sidebar/sidebar_widgets/sidebar_layouts.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -42,6 +42,10 @@ class Sidebar extends StatelessWidget {
                       );
                     }),
                     SizedBox(height: 8),
+                    Divider(),
+                    SizedBox(height: 8),
+                    SidebarLinkToGithub(),
+                    SizedBox(height: 12),
                   ],
                 ),
               ),

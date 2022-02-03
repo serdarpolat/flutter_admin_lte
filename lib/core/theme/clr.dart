@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Clr {
   Clr._();
 
+  static Color bg = Color(0xfff4f6f9);
   static Color blue = Color(0xff007bff);
   static Color indigo = Color(0xff6610f2);
   static Color purple = Color(0xff6f42c1);

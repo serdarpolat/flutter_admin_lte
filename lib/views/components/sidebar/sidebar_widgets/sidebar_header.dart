@@ -1,8 +1,8 @@
 import 'package:admin_lte/core/core.dart';
 import 'package:flutter/material.dart';
 
-class SidebarUserLink extends StatelessWidget {
-  const SidebarUserLink({
+class SidebarHeader extends StatelessWidget {
+  const SidebarHeader({
     Key? key,
   }) : super(key: key);
 
@@ -18,20 +18,19 @@ class SidebarUserLink extends StatelessWidget {
           child: Row(
             children: [
               SizedBox(width: 16),
-              ClipOval(
-                  child: Image.network(
-                "https://randomuser.me/api/portraits/men/11.jpg",
+              Image.asset(
+                "AdminLTELogo".toIMGPng,
                 width: 33,
                 height: 33,
                 fit: BoxFit.cover,
-              )),
+              ),
               SizedBox(width: 16),
               Text(
-                "Serdar POLAT",
+                "AdminLTE",
                 style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400,
-                  color: Clr.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w300,
+                  color: Clr.white.withOpacity(0.8),
                 ),
               ),
             ],

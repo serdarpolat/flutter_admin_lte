@@ -24,7 +24,7 @@ class SidebarButton extends StatelessWidget {
         : (isActive
             ? Clr.blue
             : expanded
-                ? Clr.gray
+                ? Clr.gray.withOpacity(0.25)
                 : Clr.dark);
     Color textColor = isSubbuton ? (isActive ? Clr.dark : Clr.white) : Clr.white;
     return AnimatedContainer(
@@ -137,12 +137,13 @@ class SidebarButton extends StatelessWidget {
               Column(
                 children: List.generate(item.subButtons!.length, (index) {
                   return Padding(
-                    padding: EdgeInsets.only(top: 4.0),
+                    padding: EdgeInsets.only(top: 4.0, left: 8),
                     child: SidebarButton(
                       item: item.subButtons![index],
                       isActive: item.id == sidebarProvider.id && item.subButtons![index].id == sidebarProvider.subId,
                       expanded: false,
                       onTap: () {
+                        sidebarProvider.setSubId(item.subButtons![index].id);
                         sidebarProvider.setId(item.id);
                       },
                     ),
