@@ -18,6 +18,7 @@ class SidebarButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SidebarProvider sidebarProvider = Provider.of<SidebarProvider>(context, listen: false);
+    PageProvider pageProvider = Provider.of<PageProvider>(context, listen: false);
     bool isSubbuton = item.icon == Icons.panorama_fish_eye;
     Color bgColor = isSubbuton
         ? (isActive ? Clr.white.withOpacity(0.9) : Clr.dark)
@@ -143,6 +144,8 @@ class SidebarButton extends StatelessWidget {
                       isActive: item.id == sidebarProvider.id && item.subButtons![index].id == sidebarProvider.subId,
                       expanded: false,
                       onTap: () {
+                        pageProvider.newPage(item.id);
+                        pageProvider.newSubPage(item.subButtons![index].id);
                         sidebarProvider.setSubId(item.subButtons![index].id);
                         sidebarProvider.setId(item.id);
                       },

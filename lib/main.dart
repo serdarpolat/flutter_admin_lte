@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => SidebarProvider()),
+        ChangeNotifierProvider(create: (context) => PageProvider()),
       ],
       child: MaterialApp(
         title: 'AdminLTE',

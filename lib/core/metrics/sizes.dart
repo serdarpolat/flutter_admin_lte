@@ -9,8 +9,9 @@ class Sizes {
   static double lg = 992;
   static double xl = 1200;
 
-  static double width(BuildContext context) =>
-      MediaQuery.of(context).size.width;
-  static double height(BuildContext context) =>
-      MediaQuery.of(context).size.height;
+  static double width(BuildContext context) => MediaQuery.of(context).size.width;
+  static double height(BuildContext context) => MediaQuery.of(context).size.height;
+  static double h(double size) => (142 * size) / 112;
+
+  static remToPx(double rem) => rem * 16;
 }

@@ -8,8 +8,8 @@ class Sidebar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer(
-      builder: (context, SidebarProvider sidebarProvider, Widget? child) {
+    return Consumer2(
+      builder: (context, SidebarProvider sidebarProvider, PageProvider pageProvider, Widget? child) {
         return Container(
           width: 250,
           height: Sizes.height(context),
@@ -34,6 +34,8 @@ class Sidebar extends StatelessWidget {
                             if (sidebarButtons[index].subButtons != null) {
                               sidebarProvider.setExpandId(sidebarButtons[index].id);
                             } else {
+                              pageProvider.newPage(sidebarButtons[index].id);
+                              pageProvider.newSubPage(0);
                               sidebarProvider.setExpandId(-1);
                               sidebarProvider.setId(sidebarButtons[index].id);
                             }

@@ -26,4 +26,5 @@ class Clr {
   static Color light = Color(0xfff8f9fa);
   static Color dark = Color(0xff343a40);
   static Color borderGray = Color(0xff4b545c);
+  static Color black = Color(0xff000000);
 }
