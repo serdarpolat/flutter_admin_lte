@@ -33,14 +33,14 @@ class LteCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(Sizes.h(8)),
         boxShadow: [
           BoxShadow(
-            color: Clr.black.withOpacity(0.13),
+            color: Clr.black.withOpacity(0.05),
             offset: Offset(0, 0),
-            blurRadius: Sizes.h(1),
+            blurRadius: Sizes.h(0.5),
           ),
           BoxShadow(
-            color: Clr.black.withOpacity(0.2),
+            color: Clr.black.withOpacity(0.1),
             offset: Offset(0, 1),
-            blurRadius: Sizes.h(3),
+            blurRadius: Sizes.h(1.5),
           ),
         ],
       ),
@@ -81,12 +81,12 @@ class LteCardHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: Sizes.h(55.41),
+      height: Sizes.h(50),
       child: child,
       padding: EdgeInsets.symmetric(
         horizontal: Sizes.h(Sizes.remToPx(1.25)),
         vertical: Sizes.h(
-          Sizes.remToPx(0.75),
+          Sizes.remToPx(0.25),
         ),
       ),
       decoration: BoxDecoration(
