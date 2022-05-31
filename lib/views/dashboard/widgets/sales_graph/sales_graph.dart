@@ -64,7 +64,7 @@ class _SalesGraphState extends State<SalesGraph> {
         ),
         body: AnimatedContainer(
           duration: Duration(milliseconds: 240),
-          height: closed ? 0 : 290 + 114,
+          height: closed ? 0 : 290,
           child: SingleChildScrollView(
             controller: controller,
             child: Column(
@@ -77,8 +77,15 @@ class _SalesGraphState extends State<SalesGraph> {
                     child: LineChart(
                       LineChartData(
                         gridData: FlGridData(
-                          show: false,
-                          drawHorizontalLine: false,
+                          show: true,
+                          drawHorizontalLine: true,
+                          drawVerticalLine: false,
+                          getDrawingHorizontalLine: (value) {
+                            return FlLine(
+                              color: Colors.white,
+                              strokeWidth: 1,
+                            );
+                          },
                         ),
                         titlesData: FlTitlesData(
                           show: true,
@@ -106,47 +113,40 @@ class _SalesGraphState extends State<SalesGraph> {
                           ),
                         ),
                         borderData: FlBorderData(
-                          show: false,
-                          border: Border.all(color: const Color(0xff37434d), width: 1),
+                          show: true,
+                          border: Border.all(color: Colors.white, width: 1),
                         ),
                         minX: 0,
-                        maxX: 10,
-                        minY: 10,
-                        maxY: 20000,
+                        maxX: 9,
+                        minY: 0,
+                        maxY: 200,
                         lineBarsData: [
                           LineChartBarData(
+                            color: Colors.white,
                             spots: const [
-                              FlSpot(0, 2666),
-                              FlSpot(1, 2778),
-                              FlSpot(2, 4912),
-                              FlSpot(3, 3767),
-                              FlSpot(4, 6810),
-                              FlSpot(5, 5670),
-                              FlSpot(6, 4820),
-                              FlSpot(7, 15073),
-                              FlSpot(8, 10687),
-                              FlSpot(9, 8432),
+                              FlSpot(0, 2666 / 100),
+                              FlSpot(1, 2778 / 100),
+                              FlSpot(2, 4912 / 100),
+                              FlSpot(3, 3767 / 100),
+                              FlSpot(4, 6810 / 100),
+                              FlSpot(5, 5670 / 100),
+                              FlSpot(6, 4820 / 100),
+                              FlSpot(7, 15073 / 100),
+                              FlSpot(8, 10687 / 100),
+                              FlSpot(9, 8432 / 100),
                             ],
-                            isCurved: true,
-                            color: const Color(0xff23b6e6),
+                            isCurved: false,
                             barWidth: 3,
                             isStrokeCapRound: true,
-                            dotData: FlDotData(show: false),
+                            dotData: FlDotData(show: true),
                             belowBarData: BarAreaData(
-                              show: true,
+                              show: false,
                               color: Color(0xff23b6e6).withOpacity(0.5),
                             ),
                           ),
                         ],
                       ),
                     ),
-                  ),
-                ),
-                SizedBox(
-                  width: double.infinity,
-                  height: 114,
-                  child: Padding(
-                    padding: EdgeInsets.all(1.25.rem),
                   ),
                 ),
               ],
@@ -159,7 +159,7 @@ class _SalesGraphState extends State<SalesGraph> {
 
   Widget leftTitleWidgets(double value, TitleMeta meta) {
     const style = TextStyle(
-      color: Color(0xff67727d),
+      color: Colors.white,
       fontWeight: FontWeight.bold,
       fontSize: 15,
     );
@@ -168,17 +168,17 @@ class _SalesGraphState extends State<SalesGraph> {
       case 0:
         text = '0';
         break;
-      case 5000:
-        text = '5000';
+      case 50:
+        text = '50';
         break;
-      case 10000:
-        text = '10000';
+      case 100:
+        text = '100';
         break;
-      case 15000:
-        text = '15000';
+      case 150:
+        text = '150';
         break;
-      case 20000:
-        text = '20000';
+      case 200:
+        text = '200';
         break;
       default:
         return Container();
@@ -189,7 +189,7 @@ class _SalesGraphState extends State<SalesGraph> {
 
   Widget bottomTitleWidgets(double value, TitleMeta meta) {
     const style = TextStyle(
-      color: Color(0xff68737d),
+      color: Colors.white,
       fontWeight: FontWeight.bold,
       fontSize: 16,
     );

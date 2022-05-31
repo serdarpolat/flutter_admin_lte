@@ -4,6 +4,7 @@ import 'package:admin_lte/views/dashboard/widgets/info_cards.dart';
 import 'package:admin_lte/views/dashboard/widgets/sales_graph/sales_graph.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/calendar/calendar.dart';
 import 'widgets/city_map/city_map.dart';
 import 'widgets/direct_chat/direct_chat.dart';
 import 'widgets/sales_chart/sales_chart.dart';
@@ -44,6 +45,8 @@ class DashboardV1 extends StatelessWidget {
                     CityMap(),
                     SizedBox(height: 16),
                     SalesGraph(),
+                    SizedBox(height: 16),
+                    Calendar(),
                   ],
                 ),
                 flex: 5,
