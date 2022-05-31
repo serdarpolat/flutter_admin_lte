@@ -1,6 +1,9 @@
 import 'package:admin_lte/core/core.dart';
 import 'package:flutter/material.dart';
 
+import 'lte_card_body.dart';
+import 'lte_card_header.dart';
+
 class LteCard extends StatelessWidget {
   const LteCard({
     Key? key,
@@ -18,14 +21,9 @@ class LteCard extends StatelessWidget {
       child: Column(
         children: [
           //! Card header
-          if (header != null)
-            LteCardHeader(
-              child: header,
-            ),
+          if (header != null) LteCardHeader(child: header),
           //! Card body
-          LteCardBody(
-            child: body,
-          ),
+          LteCardBody(child: body),
         ],
       ),
       decoration: BoxDecoration(
@@ -43,59 +41,6 @@ class LteCard extends StatelessWidget {
             blurRadius: Sizes.h(1.5),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class LteCardBody extends StatelessWidget {
-  const LteCardBody({
-    Key? key,
-    required this.child,
-  }) : super(key: key);
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: EdgeInsets.symmetric(
-        horizontal: Sizes.h(Sizes.remToPx(1.25)),
-        vertical: Sizes.h(
-          Sizes.remToPx(0.75),
-        ),
-      ),
-      child: child,
-    );
-  }
-}
-
-class LteCardHeader extends StatelessWidget {
-  const LteCardHeader({
-    Key? key,
-    this.child,
-  }) : super(key: key);
-  final Widget? child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: Sizes.h(50),
-      child: child,
-      padding: EdgeInsets.symmetric(
-        horizontal: Sizes.h(Sizes.remToPx(1.25)),
-        vertical: Sizes.h(
-          Sizes.remToPx(0.25),
-        ),
-      ),
-      decoration: BoxDecoration(
-        border: Border(
-          bottom: BorderSide(
-            color: Clr.black.withOpacity(0.25),
-            width: 0.5,
-          ),
-        ),
       ),
     );
   }

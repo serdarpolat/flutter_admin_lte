@@ -28,7 +28,7 @@ class Buttons extends StatelessWidget {
                       "Buttons",
                       style: TextStyle(
                         color: Clr.dark,
-                        fontSize: Sizes.h(Sizes.remToPx(1.1)),
+                        fontSize: Sizes.h(1.1.rem),
                       ),
                     ),
                   ],
@@ -44,7 +44,7 @@ class Buttons extends StatelessWidget {
                 TableRow(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: Text(
                         "Normal",
                         textAlign: TextAlign.center,
@@ -55,7 +55,7 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: Text(
                         "Large",
                         textAlign: TextAlign.center,
@@ -66,7 +66,7 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: Text(
                         "Small",
                         textAlign: TextAlign.center,
@@ -77,7 +77,7 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: Text(
                         "Extra Small",
                         textAlign: TextAlign.center,
@@ -88,7 +88,7 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: Text(
                         "Flat",
                         textAlign: TextAlign.center,
@@ -99,7 +99,7 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: Text(
                         "Disabled",
                         textAlign: TextAlign.center,
@@ -114,13 +114,13 @@ class Buttons extends StatelessWidget {
                 TableRow(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.light,
                         borderColor: Clr.black,
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Default",
@@ -135,13 +135,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonLG(
                         bgColor: Clr.light,
                         borderColor: Clr.black,
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Default",
@@ -156,13 +156,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonSM(
                         bgColor: Clr.light,
                         borderColor: Clr.black,
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Default",
@@ -177,13 +177,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonXS(
                         bgColor: Clr.light,
                         borderColor: Clr.black,
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Default",
@@ -198,13 +198,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonFlat(
                         bgColor: Clr.light,
                         borderColor: Clr.black,
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Default",
@@ -219,12 +219,12 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.light,
                         borderColor: Clr.black,
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Default",
@@ -243,13 +243,13 @@ class Buttons extends StatelessWidget {
                 TableRow(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.blue,
                         borderColor: Clr.blue.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Secondary",
@@ -264,13 +264,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonLG(
                         bgColor: Clr.blue,
                         borderColor: Clr.blue.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Secondary",
@@ -285,13 +285,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonSM(
                         bgColor: Clr.blue,
                         borderColor: Clr.blue.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Secondary",
@@ -306,13 +306,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonXS(
                         bgColor: Clr.blue,
                         borderColor: Clr.blue.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Secondary",
@@ -327,13 +327,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonFlat(
                         bgColor: Clr.blue,
                         borderColor: Clr.blue.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Secondary",
@@ -348,12 +348,12 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.blue,
                         borderColor: Clr.blue.withOpacity(0.5),
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Secondary",
@@ -372,13 +372,13 @@ class Buttons extends StatelessWidget {
                 TableRow(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.secondary,
                         borderColor: Clr.secondary.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Primary",
@@ -393,13 +393,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonLG(
                         bgColor: Clr.secondary,
                         borderColor: Clr.secondary.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Primary",
@@ -414,13 +414,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonSM(
                         bgColor: Clr.secondary,
                         borderColor: Clr.secondary.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Primary",
@@ -435,13 +435,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonXS(
                         bgColor: Clr.secondary,
                         borderColor: Clr.secondary.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Primary",
@@ -456,13 +456,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonFlat(
                         bgColor: Clr.secondary,
                         borderColor: Clr.secondary.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Primary",
@@ -477,12 +477,12 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.secondary,
                         borderColor: Clr.secondary.withOpacity(0.5),
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Primary",
@@ -501,13 +501,13 @@ class Buttons extends StatelessWidget {
                 TableRow(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.green,
                         borderColor: Clr.green.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Success",
@@ -522,13 +522,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonLG(
                         bgColor: Clr.green,
                         borderColor: Clr.green.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Success",
@@ -543,13 +543,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonSM(
                         bgColor: Clr.green,
                         borderColor: Clr.green.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Success",
@@ -564,13 +564,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonXS(
                         bgColor: Clr.green,
                         borderColor: Clr.green.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Success",
@@ -585,13 +585,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonFlat(
                         bgColor: Clr.green,
                         borderColor: Clr.green.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Success",
@@ -606,12 +606,12 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.green,
                         borderColor: Clr.green.withOpacity(0.5),
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Success",
@@ -630,13 +630,13 @@ class Buttons extends StatelessWidget {
                 TableRow(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.info,
                         borderColor: Clr.info.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Info",
@@ -651,13 +651,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonLG(
                         bgColor: Clr.info,
                         borderColor: Clr.info.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Info",
@@ -672,13 +672,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonSM(
                         bgColor: Clr.info,
                         borderColor: Clr.info.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Info",
@@ -693,13 +693,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonXS(
                         bgColor: Clr.info,
                         borderColor: Clr.info.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Info",
@@ -714,13 +714,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonFlat(
                         bgColor: Clr.info,
                         borderColor: Clr.info.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Info",
@@ -735,12 +735,12 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.info,
                         borderColor: Clr.info.withOpacity(0.5),
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Info",
@@ -759,13 +759,13 @@ class Buttons extends StatelessWidget {
                 TableRow(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.danger,
                         borderColor: Clr.danger.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Danger",
@@ -780,13 +780,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonLG(
                         bgColor: Clr.danger,
                         borderColor: Clr.danger.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Danger",
@@ -801,13 +801,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonSM(
                         bgColor: Clr.danger,
                         borderColor: Clr.danger.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Danger",
@@ -822,13 +822,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonXS(
                         bgColor: Clr.danger,
                         borderColor: Clr.danger.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Danger",
@@ -843,13 +843,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonFlat(
                         bgColor: Clr.danger,
                         borderColor: Clr.danger.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Danger",
@@ -864,12 +864,12 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.danger,
                         borderColor: Clr.danger.withOpacity(0.5),
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Danger",
@@ -888,13 +888,13 @@ class Buttons extends StatelessWidget {
                 TableRow(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.warning,
                         borderColor: Clr.warning.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Warning",
@@ -909,13 +909,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonLG(
                         bgColor: Clr.warning,
                         borderColor: Clr.warning.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Warning",
@@ -930,13 +930,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonSM(
                         bgColor: Clr.warning,
                         borderColor: Clr.warning.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Warning",
@@ -951,13 +951,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonXS(
                         bgColor: Clr.warning,
                         borderColor: Clr.warning.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Warning",
@@ -972,13 +972,13 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonFlat(
                         bgColor: Clr.warning,
                         borderColor: Clr.warning.withOpacity(0.5),
                         onTap: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Warning",
@@ -993,12 +993,12 @@ class Buttons extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(Sizes.h(Sizes.remToPx(0.75))),
+                      padding: EdgeInsets.all(Sizes.h(0.75).rem),
                       child: ButtonNormal(
                         bgColor: Clr.warning,
                         borderColor: Clr.warning.withOpacity(0.5),
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(Sizes.remToPx(1))),
+                          padding: EdgeInsets.symmetric(horizontal: Sizes.h(1).rem),
                           child: Center(
                             child: Text(
                               "Warning",

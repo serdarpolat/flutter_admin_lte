@@ -18,15 +18,15 @@ class ButtonNormal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: bgColor ?? Clr.light,
-      borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.25))),
+      borderRadius: BorderRadius.circular(Sizes.h(0.25.rem)),
       child: InkWell(
-        borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.25))),
+        borderRadius: BorderRadius.circular(Sizes.h(0.25.rem)),
         onTap: onTap,
         child: Container(
           height: 38,
           child: child,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.25))),
+            borderRadius: BorderRadius.circular(Sizes.h(0.25.rem)),
             border: Border.all(
               color: borderColor ?? Color(0xffdddddd),
               width: 0.5,
@@ -55,15 +55,15 @@ class ButtonLG extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: bgColor ?? Clr.light,
-      borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.3))),
+      borderRadius: BorderRadius.circular(Sizes.h(0.3.rem)),
       child: InkWell(
-        borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.3))),
+        borderRadius: BorderRadius.circular(Sizes.h(0.3.rem)),
         onTap: onTap,
         child: Container(
           height: 48,
           child: child,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.3))),
+            borderRadius: BorderRadius.circular(Sizes.h(0.3.rem)),
             border: Border.all(
               color: borderColor ?? Color(0xffdddddd),
               width: 0.5,
@@ -92,15 +92,15 @@ class ButtonSM extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: bgColor ?? Clr.light,
-      borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.2))),
+      borderRadius: BorderRadius.circular(Sizes.h(0.2.rem)),
       child: InkWell(
-        borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.2))),
+        borderRadius: BorderRadius.circular(Sizes.h(0.2.rem)),
         onTap: onTap,
         child: Container(
           height: 31,
           child: child,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.2))),
+            borderRadius: BorderRadius.circular(Sizes.h(0.2.rem)),
             border: Border.all(
               color: borderColor ?? Color(0xffdddddd),
               width: 0.5,
@@ -129,15 +129,15 @@ class ButtonXS extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: bgColor ?? Clr.light,
-      borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.15))),
+      borderRadius: BorderRadius.circular(Sizes.h(0.15.rem)),
       child: InkWell(
-        borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.15))),
+        borderRadius: BorderRadius.circular(Sizes.h(0.15.rem)),
         onTap: onTap,
         child: Container(
           height: 24,
           child: child,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(Sizes.h(Sizes.remToPx(0.15))),
+            borderRadius: BorderRadius.circular(Sizes.h(0.15.rem)),
             border: Border.all(
               color: borderColor ?? Color(0xffdddddd),
               width: 0.5,

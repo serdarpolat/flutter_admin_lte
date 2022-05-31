@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class Sidebar extends StatelessWidget {
-  const Sidebar({Key? key}) : super(key: key);
+  const Sidebar({Key? key, required this.scaffoldKey}) : super(key: key);
+  final GlobalKey<ScaffoldState> scaffoldKey;
 
   @override
   Widget build(BuildContext context) {
+    final sidebarScrollController = ScrollController();
     return Consumer2(
       builder: (context, SidebarProvider sidebarProvider, PageProvider pageProvider, Widget? child) {
         return Container(
@@ -17,6 +19,7 @@ class Sidebar extends StatelessWidget {
           child: Stack(
             children: [
               SingleChildScrollView(
+                controller: sidebarScrollController,
                 child: Column(
                   children: [
                     SizedBox(height: 57),

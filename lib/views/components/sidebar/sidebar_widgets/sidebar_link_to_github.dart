@@ -1,7 +1,9 @@
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
+
 import 'package:admin_lte/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'dart:html' as html;
 
 class SidebarLinkToGithub extends StatefulWidget {
   const SidebarLinkToGithub({
@@ -17,11 +19,11 @@ class _SidebarLinkToGithubState extends State<SidebarLinkToGithub> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onHover: (val) {
-        setState(() {
-          onHover = val;
-        });
-      },
+      // onHover: (val) {
+      //   setState(() {
+      //     onHover = val;
+      //   });
+      // },
       onPressed: () {
         html.window.open('https://github.com/serdarpolat/flutter_admin_lte', 'new tab');
       },

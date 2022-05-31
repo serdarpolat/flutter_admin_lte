@@ -19,7 +19,7 @@ class ContentHeader extends StatelessWidget {
             pageNames[pageProvider.page][pageProvider.subPage],
             style: TextStyle(
               color: Clr.dark,
-              fontSize: Sizes.remToPx(1.8),
+              fontSize: 1.8.rem,
             ),
           ),
           Row(
@@ -36,7 +36,7 @@ class ContentHeader extends StatelessWidget {
                     "Home",
                     style: TextStyle(
                       color: Clr.blue,
-                      fontSize: Sizes.remToPx(1),
+                      fontSize: 1.rem,
                       height: 1.8,
                     ),
                   ),
@@ -46,7 +46,7 @@ class ContentHeader extends StatelessWidget {
                 "  /  ",
                 style: TextStyle(
                   color: Clr.gray,
-                  fontSize: Sizes.remToPx(1),
+                  fontSize: 1.rem,
                   height: 1.8,
                 ),
               ),
@@ -54,7 +54,7 @@ class ContentHeader extends StatelessWidget {
                 pageNames[pageProvider.page][pageProvider.subPage],
                 style: TextStyle(
                   color: Clr.gray,
-                  fontSize: Sizes.remToPx(1),
+                  fontSize: 1.rem,
                   height: 1.8,
                 ),
               ),

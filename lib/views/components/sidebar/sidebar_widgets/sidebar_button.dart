@@ -93,26 +93,10 @@ class SidebarButton extends StatelessWidget {
                         if (item.badge != null)
                           Padding(
                             padding: EdgeInsets.only(right: 6),
-                            child: SizedBox(
-                              width: 18,
-                              height: 18,
-                              child: Container(
-                                child: Center(
-                                  child: Text(
-                                    item.badge!,
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 10,
-                                      color: Clr.white,
-                                      height: 1,
-                                    ),
-                                  ),
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Clr.cyan,
-                                  borderRadius: BorderRadius.circular(3),
-                                ),
-                              ),
+                            child: Badge(
+                              title: item.badge!,
+                              titleColor: Clr.white,
+                              badgeColor: Clr.cyan,
                             ),
                           ),
                         if (item.subButtons != null)

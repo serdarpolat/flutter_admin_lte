@@ -1,7 +1,8 @@
 import 'package:admin_lte/core/core.dart';
+import 'package:admin_lte/core/models/info_card_model.dart';
+import 'package:admin_lte/core/providers/media_provider.dart';
 import 'package:admin_lte/views/components/components_files.dart';
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
 
 class InfoCards extends StatelessWidget {
   const InfoCards({
@@ -10,40 +11,38 @@ class InfoCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: Sizes.h(4)),
-      child: Row(
-        children: [
-          InfoCard(
-            title: "150",
-            subtitle: "New Orders",
-            iconData: Ionicons.bag,
-            bgColor: Clr.cyan,
-            textColor: Clr.white,
-          ),
-          InfoCard(
-            title: "53",
-            subtitle: "Bounce Rate",
-            iconData: Ionicons.stats_chart,
-            bgColor: Clr.green,
-            textColor: Clr.white,
-          ),
-          InfoCard(
-            title: "44",
-            subtitle: "User Registrations",
-            iconData: Ionicons.person_add,
-            bgColor: Clr.yellow,
-            textColor: Clr.dark,
-          ),
-          InfoCard(
-            title: "65",
-            subtitle: "Unique Visitors",
-            iconData: Ionicons.pie_chart,
-            bgColor: Clr.red,
-            textColor: Clr.white,
-          ),
-        ],
+    int crosAxisCount = MediaProvider.screen(context) == BPoints.xlarge
+        ? 4
+        : MediaProvider.screen(context) == BPoints.large
+            ? 3
+            : 2;
+
+    double childAspectRatio = MediaQuery.of(context).size.width >= 1335
+        ? 2.5
+        : MediaQuery.of(context).size.width >= 1064
+            ? 1.8
+            : MediaProvider.screen(context) == BPoints.large
+                ? 2
+                : MediaProvider.screen(context) == BPoints.medium
+                    ? 2.14
+                    : 1.75;
+    return GridView.builder(
+      shrinkWrap: true,
+      padding: EdgeInsets.all(Sizes.h(8)),
+      physics: NeverScrollableScrollPhysics(),
+      itemCount: infoCards.length,
+      scrollDirection: Axis.vertical,
+      // controller: menuScroll,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: crosAxisCount,
+        crossAxisSpacing: 8,
+        mainAxisSpacing: 8,
+        childAspectRatio: childAspectRatio,
       ),
+      itemBuilder: (context, index) {
+        final InfoCardModel card = infoCards[index];
+        return InfoCard(infoCard: card);
+      },
     );
   }
 }

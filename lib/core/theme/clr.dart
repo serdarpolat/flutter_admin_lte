@@ -16,6 +16,7 @@ class Clr {
   static Color cyan = Color(0xff17a2b8);
   static Color white = Color(0xffffffff);
   static Color gray = Color(0xff6c757d);
+  static Color border = Color(0xff6c757d).withOpacity(0.5);
   static Color grayDark = Color(0xff343a40);
   static Color primary = Color(0xff007bff);
   static Color secondary = Color(0xff6c757d);

@@ -1,12 +1,11 @@
 import 'package:admin_lte/core/core.dart';
+import 'package:admin_lte/core/providers/media_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
 class Navbar extends StatelessWidget {
-  const Navbar({
-    Key? key,
-  }) : super(key: key);
-
+  const Navbar({Key? key, required this.scaffoldKey}) : super(key: key);
+  final GlobalKey<ScaffoldState> scaffoldKey;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,14 +14,17 @@ class Navbar extends StatelessWidget {
       padding: EdgeInsets.all(8),
       child: Row(
         children: [
-          Material(
-            color: Colors.transparent,
-            child: IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.menu),
-              color: Clr.dark,
+          if (MediaProvider.screen(context) != BPoints.xlarge)
+            Material(
+              color: Colors.transparent,
+              child: IconButton(
+                onPressed: () {
+                  scaffoldKey.currentState!.openDrawer();
+                },
+                icon: Icon(Icons.menu),
+                color: Clr.dark,
+              ),
             ),
-          ),
           Row(
             children: [
               Padding(
