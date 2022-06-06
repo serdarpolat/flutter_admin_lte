@@ -1,5 +1,6 @@
 export 'extensions/num_extensions.dart';
-export 'extensions/string_ext.dart';
+export 'extensions/string_extensions.dart';
+export 'extensions/widget_extensions.dart';
 export 'metrics/sizes.dart';
 export 'models/sidebar_button_model.dart';
 export 'models/todo_item_model.dart';
@@ -8,4 +9,5 @@ export 'providers/sidebar_provider.dart';
 export 'static_data.dart';
 export 'theme/clr.dart';
 export 'widgets/badge.dart';
+export 'widgets/info_box.dart';
 export 'widgets/todo_list_item.dart';

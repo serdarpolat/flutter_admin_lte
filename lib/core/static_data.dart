@@ -156,7 +156,7 @@ List<List<String>> pageNames = [
   /// Widgets
   /// pages [3]
   [
-    "WidgetsBase",
+    "Widgets",
   ],
 
   /// Layout Options

@@ -2,8 +2,10 @@ import 'package:admin_lte/core/core.dart';
 import 'package:admin_lte/views/home.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(const MyApp());
 }
 

@@ -1,4 +1,3 @@
-import 'package:admin_lte/core/core.dart';
 import 'package:admin_lte/core/models/info_card_model.dart';
 import 'package:admin_lte/core/providers/media_provider.dart';
 import 'package:admin_lte/views/components/components_files.dart';
@@ -26,23 +25,53 @@ class InfoCards extends StatelessWidget {
                 : MediaProvider.screen(context) == BPoints.medium
                     ? 2.14
                     : 1.75;
-    return GridView.builder(
-      shrinkWrap: true,
-      padding: EdgeInsets.all(Sizes.h(8)),
-      physics: NeverScrollableScrollPhysics(),
-      itemCount: infoCards.length,
-      scrollDirection: Axis.vertical,
-      // controller: menuScroll,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: crosAxisCount,
-        crossAxisSpacing: 8,
-        mainAxisSpacing: 8,
-        childAspectRatio: childAspectRatio,
-      ),
-      itemBuilder: (context, index) {
-        final InfoCardModel card = infoCards[index];
-        return InfoCard(infoCard: card);
-      },
-    );
+    return (MediaProvider.screen(context) == BPoints.xlarge || MediaProvider.screen(context) == BPoints.large)
+        ? Row(
+            children: List.generate(
+              infoCards.length,
+              (index) {
+                final InfoCardModel card = infoCards[index];
+                return Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    child: InfoCard(infoCard: card),
+                  ),
+                );
+              },
+            ),
+          )
+        : Column(
+            children: [
+              Row(
+                children: List.generate(
+                  2,
+                  (index) {
+                    final InfoCardModel card = infoCards[index];
+                    return Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: InfoCard(infoCard: card),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              SizedBox(height: 16),
+              Row(
+                children: List.generate(
+                  2,
+                  (index) {
+                    final InfoCardModel card = infoCards[index + 2];
+                    return Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: InfoCard(infoCard: card),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
+          );
   }
 }

@@ -16,4 +16,20 @@ class PageProvider with ChangeNotifier {
     _subPage = i;
     notifyListeners();
   }
+
+  bool _fullPageOpened = false;
+  bool get fullPageOpened => _fullPageOpened;
+
+  openFullPage(bool b) {
+    _fullPageOpened = b;
+    notifyListeners();
+  }
+
+  Widget? _fullPage;
+  Widget? get fullPage => _fullPage;
+
+  setFullPage(Widget child) {
+    _fullPage = child;
+    notifyListeners();
+  }
 }

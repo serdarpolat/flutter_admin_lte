@@ -26,6 +26,7 @@ class Clr {
   static Color danger = Color(0xffdc3545);
   static Color light = Color(0xfff8f9fa);
   static Color dark = Color(0xff343a40);
+  static Color darker = Color(0xff212529);
   static Color borderGray = Color(0xff4b545c);
   static Color black = Color(0xff000000);
 }

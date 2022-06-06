@@ -16,31 +16,35 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     PageProvider pageProvider = Provider.of<PageProvider>(context);
-    return Scaffold(
-      backgroundColor: Clr.bg,
-      key: _scaffoldKey,
-      body: SizedBox(
-        width: Sizes.width(context),
-        height: Sizes.height(context),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            if (MediaProvider.screen(context) == BPoints.xlarge) Sidebar(scaffoldKey: _scaffoldKey),
-            Expanded(
-              child: Stack(
+    return !pageProvider.fullPageOpened
+        ? Scaffold(
+            backgroundColor: Clr.bg,
+            key: _scaffoldKey,
+            body: SizedBox(
+              width: Sizes.width(context),
+              height: Sizes.height(context),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 57),
-                    child: pages[pageProvider.page][pageProvider.subPage],
+                  if (MediaProvider.screen(context) == BPoints.xlarge) Sidebar(scaffoldKey: _scaffoldKey),
+                  Expanded(
+                    child: Stack(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 57),
+                          child: pages[pageProvider.page][pageProvider.subPage],
+                        ),
+                        Navbar(scaffoldKey: _scaffoldKey),
+                      ],
+                    ),
                   ),
-                  Navbar(scaffoldKey: _scaffoldKey),
                 ],
               ),
             ),
-          ],
-        ),
-      ),
-      drawer: MediaProvider.screen(context) != BPoints.xlarge ? Sidebar(scaffoldKey: _scaffoldKey) : null,
-    );
+            drawer: MediaProvider.screen(context) != BPoints.xlarge ? Sidebar(scaffoldKey: _scaffoldKey) : null,
+          )
+        : Scaffold(
+            body: pageProvider.fullPage,
+          );
   }
 }
